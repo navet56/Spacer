@@ -1,6 +1,7 @@
 #SPACER by NAVET56
 #File under GPL 3
 #You can use, modify or redistribute the code and the game
+#Version 0.1 alpha
 
 import turtle
 import os
