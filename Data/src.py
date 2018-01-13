@@ -114,7 +114,7 @@ def fire_bullet():
 	#Declare bulletstate as a global if it needs changed
 	global bulletstate
 	if bulletstate == "ready":
-		os.system("afplay laser.wav&")
+		os.system("afplay laser.wav&")#Work only on macOS
 		bulletstate = "fire"
 		#Move the bullet to the just above the player
 		x = player.xcor()
@@ -180,7 +180,7 @@ while True:
 			score_pen.write(scorestring, False, align="left", font=("Arial", 14, "normal"))
 		
 		if isCollision(player, enemy):
-			os.system("afplay explosion.wav&")#Not work
+			os.system("afplay explosion.wav&")#Work only on macOS
 			player.hideturtle()
 			enemy.hideturtle()
 			print ("Game Over")#Not work
